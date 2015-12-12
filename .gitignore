@@ -25,3 +25,20 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
+
+engine/
+node_modules/
+platforms/
+plugins/
+#resources/
+bower_components/
+*.keystore
+release.sh
+config.scss
+about.md
+cordova.plugin.backup
+deployement/config/config.json
+.DS_Store
+release.sh
+build/
+dist/

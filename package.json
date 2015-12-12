@@ -1,0 +1,50 @@
+{
+  "name": "ionic-cross-platform-boilerplate",
+  "title": "Cross platform apps with Ionic",
+  "version": "0.0.1",
+  "description": "Ionic boilerplate to create cross platform apps (ios, android, mobile, web and desktop). Written in TypeScript and Powered by Webpack!",
+  "main": "lib/index.js",
+  "scripts": {
+    "installCordova": "sh ./install_cordova.sh",
+    "devserver": "webpack-dev-server --colors --json --progress",
+    "dumpdev": "rm -rf www/* && webpack",
+    "dumpprod": "rm -rf www/* && webpack --release --config webpack.config.prod.js",
+    "runAndroid": "npm run dumpdev && cordova run android",
+    "runIosEmulator": "npm run dumpdev && cordova run ios",
+    "runIosDevice": "npm run dumpdev && cordova run ios --device",
+    "platformAddAndroid": "cordova platform add android",
+    "platformAddIOS": "cordova platform add ios",
+    "pluginAddAll": "cordova plugin add cordova-plugin-whitelist@1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shprink/ionic-cross-platform-boilerplate.git"
+  },
+  "author": "shprink <contact@julienrenaux.fr> (http://julienrenaux.fr/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shprink/ionic-cross-platform-boilerplate/issues"
+  },
+  "homepage": "https://github.com/shprink/ionic-cross-platform-boilerplate#readme",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "cordova": "^5.4.1",
+    "css-loader": "^0.23.0",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.0",
+    "html-webpack-plugin": "^1.7.0",
+    "ng-annotate-loader": "0.0.10",
+    "node-sass": "^3.4.2",
+    "path": "^0.12.7",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "ts-loader": "^0.7.2",
+    "typescript": "^1.7.3",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "ionic-sdk": "^1.2.0",
+    "ng-cordova": "^0.1.23-alpha"
+  }
+}
