@@ -27,9 +27,9 @@ build/Release
 node_modules
 
 engine/
-node_modules/
-./platforms/
-./plugins/
+/node_modules
+/platforms
+/plugins
 #resources/
 bower_components/
 *.keystore
