@@ -1,0 +1,24 @@
+<ion-view>
+    <ion-nav-title>Network</ion-nav-title>
+    <ion-content class="padding">
+        <div class="card">
+            <div class="item item-text-wrap">
+                Browser can't detect the type of network connection. navigator.connection.type is always set to Connection.UNKNOWN when online.
+            </div>
+        </div>
+        <div class="list">
+            <div class="item item-icon-left" href="#">
+                <i class="icon ion-mic-a"></i> Network type
+                <span class="item-note">
+                    {{networkCtrl.network}}
+                </span>
+            </div>
+            <div class="item item-icon-left" href="#">
+                <i class="icon ion-mic-a"></i> isOnline
+                <span class="item-note">
+                    {{networkCtrl.isOnline}}
+                </span>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

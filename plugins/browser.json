@@ -1,0 +1,32 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Camera\"><param name=\"browser-package\" value=\"Camera\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "org.apache.cordova.battery-status": {
+            "PACKAGE_NAME": "fr.julienrenaux.ionic-cross-platform"
+        },
+        "org.apache.cordova.camera": {
+            "PACKAGE_NAME": "fr.julienrenaux.ionic-cross-platform"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "fr.julienrenaux.ionic-cross-platform"
+        }
+    },
+    "dependent_plugins": {}
+}

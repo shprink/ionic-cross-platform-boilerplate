@@ -5,16 +5,14 @@
   "description": "Ionic boilerplate to create cross platform apps (ios, android, mobile, web and desktop). Written in TypeScript and Powered by Webpack!",
   "main": "lib/index.js",
   "scripts": {
-    "installCordova": "sh ./install_cordova.sh",
-    "devserver": "webpack-dev-server --colors --json --progress",
     "dumpdev": "rm -rf www/* && webpack",
     "dumpprod": "rm -rf www/* && webpack --release --config webpack.config.prod.js",
-    "runAndroid": "npm run dumpdev && cordova run android",
-    "runIosEmulator": "npm run dumpdev && cordova run ios",
-    "runIosDevice": "npm run dumpdev && cordova run ios --device",
-    "platformAddAndroid": "cordova platform add android",
-    "platformAddIOS": "cordova platform add ios",
-    "pluginAddAll": "cordova plugin add cordova-plugin-whitelist@1.0.0"
+    "watch": "rm -rf www/* && webpack --watch --progress --colors",
+    "browser": "npm run dumpdev && cordova run browser",
+    "desktop": "npm run dumpdev && cordova build browser && electron ./platforms/browser/www/index.desktop.js",
+    "android": "npm run dumpdev && cordova run android",
+    "iosEmulator": "npm run dumpdev && cordova run ios",
+    "ios": "npm run dumpdev && cordova run ios --device"
   },
   "repository": {
     "type": "git",
@@ -30,6 +28,7 @@
     "autoprefixer-loader": "^3.1.0",
     "cordova": "^5.4.1",
     "css-loader": "^0.23.0",
+    "electron-prebuilt": "^0.36.0",
     "file-loader": "^0.8.5",
     "html-loader": "^0.4.0",
     "html-webpack-plugin": "^1.7.0",
@@ -46,5 +45,15 @@
   "dependencies": {
     "ionic-sdk": "^1.2.0",
     "ng-cordova": "^0.1.23-alpha"
-  }
+  },
+  "cordovaPlugins": [
+    "org.apache.cordova.battery-status",
+    "org.apache.cordova.camera",
+    "cordova-plugin-network-information"
+  ],
+  "cordovaPlatforms": [
+    "ios",
+    "android",
+    "browser"
+  ]
 }

@@ -28,8 +28,8 @@ node_modules
 
 engine/
 node_modules/
-platforms/
-plugins/
+./platforms/
+./plugins/
 #resources/
 bower_components/
 *.keystore

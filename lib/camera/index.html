@@ -1,0 +1,11 @@
+<ion-view>
+    <ion-nav-title>Camera</ion-nav-title>
+    <ion-content class="padding">
+        {{cameraCtrl}}
+        {{takePicture}}
+        <button ng-click="cameraCtrl.takePicture()">Take a picture</button>
+        <div class="picture-container">
+            <img id="picture" ng-src="cameraCtrl.picture" />
+        </div>
+    </ion-content>
+</ion-view>

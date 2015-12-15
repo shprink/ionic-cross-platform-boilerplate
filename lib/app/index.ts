@@ -1,29 +1,30 @@
 import 'ionic-sdk/release/js/ionic.bundle';
+import 'ng-cordova';
 
 // Our modules
-// import modConstant from './constant.js';
-// import modConfigIonic from './config/ionic.config.js';
 import modConfigRouter from './router.config.ts';
 import modRun from './run.ts';
 import modHome from '../home/index.ts';
+// import modBattery from '../battery/index.ts';
+// import modCamera from '../camera/index.ts';
+import modNetwork from '../network/index.ts';
 import modMenu from '../menu/index.ts';
 
 // Style entry point
 import '../scss/bootstrap';
+
 // Create our crossPlatform module
 let mod = angular.module('crossPlatform', [
     'ionic',
-    // modConstant,
+    'ngCordova',
     modHome.name,
-    modMenu.name
-    // modPost
+    modMenu.name,
+    // modBattery.name,
+    // modCamera.name,
+    modNetwork.name
 ]);
 // ROUTER CONFIG
 mod.config(modConfigRouter);
-// // IONIC CONFIG
-// mod.config(modConfigIonic);
-// // WordPress CONFIG
-// mod.config(modConfigWP);
 // Run
 mod.run(modRun);
 

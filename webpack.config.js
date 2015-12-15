@@ -9,7 +9,7 @@ module.exports = {
     entry: path.join(libPath, 'index.ts'),
     output: {
         path: wwwPath,
-        filename: 'prototype-[hash:6].js'
+        filename: 'app-[hash:6].js'
     },
     module: {
         loaders: [{
