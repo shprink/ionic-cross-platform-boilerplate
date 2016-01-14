@@ -1,13 +1,9 @@
 export class NetworkController {
 
-    $scope: ng.IScope;
-    $log: ng.ILogService;
-    $cordovaNetwork: ngCordova.INetworkInformationService;
-
     network: string;
     isOnline: boolean;
 
-    constructor($scope: ng.IScope, $log: ng.ILogService, $rootScope: ng.IRootScopeService, $cordovaNetwork: ngCordova.INetworkInformationService) {
+    constructor(public $scope: ng.IScope, private $log: ng.ILogService, private $rootScope: ng.IRootScopeService, private $cordovaNetwork: ngCordova.INetworkInformationService) {
         'ngInject';
 
         this.$scope = $scope;

@@ -1,19 +1,13 @@
-import {IController} from '../interfaces/index';
+import {ICrossPlatformLoading} from '../loading/interface.ts';
 
-interface IHomeControllerScope extends ng.IScope {
-
-}
-
-export class HomeController implements IController {
-
-    $injector: ng.auto.IInjectorService;
-    $scope: IHomeControllerScope;
-
-    constructor($injector: ng.auto.IInjectorService, $scope: IHomeControllerScope) {
+export class HomeController {
+    constructor(private $injector: ng.auto.IInjectorService, public $scope: ng.IScope, public $crossPlatformLoading: ICrossPlatformLoading) {
         'ngInject';
-
-        this.$injector = $injector;
-        this.$scope = $scope;
     }
 
+    showLoading(){
+        this.$crossPlatformLoading.show('CrossPlatform Loading');
+
+        setTimeout(() => this.$crossPlatformLoading.hide(), 5000);
+    }
 }

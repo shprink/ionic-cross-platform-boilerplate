@@ -1,7 +1,10 @@
 <ion-view>
     <ion-nav-title>Network</ion-nav-title>
-    <ion-content class="padding">
-        <div class="card">
+    <ion-content class="padding bg-dark">
+        <div class="lamp" ng-class="{'online': networkCtrl.isOnline}">
+            <div class="gonna-give-light"></div>
+        </div>
+        <!-- <div class="card">
             <div class="item item-text-wrap">
                 Browser can't detect the type of network connection. navigator.connection.type is always set to Connection.UNKNOWN when online.
             </div>
@@ -19,6 +22,6 @@
                     {{networkCtrl.isOnline}}
                 </span>
             </div>
-        </div>
+        </div> -->
     </ion-content>
 </ion-view>

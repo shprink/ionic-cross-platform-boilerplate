@@ -7,12 +7,12 @@
   "scripts": {
     "dumpdev": "rm -rf www/* && webpack",
     "dumpprod": "rm -rf www/* && webpack --release --config webpack.config.prod.js",
-    "watch": "rm -rf www/* && webpack --watch --progress --colors",
-    "browser": "npm run dumpdev && cordova run browser",
-    "desktop": "npm run dumpdev && cordova build browser && electron ./platforms/browser/www/index.desktop.js",
-    "android": "npm run dumpdev && cordova run android",
-    "iosEmulator": "npm run dumpdev && cordova run ios",
-    "ios": "npm run dumpdev && cordova run ios --device"
+    "watch": "rm -rf www/* && webpack --watch --progress --colors --config webpack.config.browser.js",
+    "browser": "npm run dumpdev -- --config webpack.config.browser.js && cordova run browser",
+    "desktop": "npm run dumpdev -- --config webpack.config.desktop.js  && cordova build browser && electron ./platforms/browser/www/index.desktop.js",
+    "android": "npm run dumpdev -- --config webpack.config.android.js  && cordova run android",
+    "iosEmulator": "npm run dumpdev -- --config webpack.config.ios.js  && cordova run ios",
+    "ios": "npm run dumpdev -- --config webpack.config.ios.js  && cordova run ios --device"
   },
   "repository": {
     "type": "git",
@@ -49,7 +49,8 @@
   "cordovaPlugins": [
     "org.apache.cordova.battery-status",
     "org.apache.cordova.camera",
-    "cordova-plugin-network-information"
+    "cordova-plugin-network-information",
+    "cordova-plugin-spinner-dialog"
   ],
   "cordovaPlatforms": [
     "ios",
