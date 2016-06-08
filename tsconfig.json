@@ -4,6 +4,6 @@
     "sourceMap": true
   },
   "files": [
-    "lib/typings/tsd.d.ts"
+    "lib/typings/index.d.ts"
   ]
 }

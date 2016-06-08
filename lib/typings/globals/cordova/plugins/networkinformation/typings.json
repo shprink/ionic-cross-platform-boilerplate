@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/57fdaeeec3e49a60b41c9743b788adb108e9953b/cordova/plugins/NetworkInformation.d.ts",
+    "raw": "registry:dt/cordova/plugins/networkinformation#0.0.0+20160514150524",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/57fdaeeec3e49a60b41c9743b788adb108e9953b/cordova/plugins/NetworkInformation.d.ts"
+  }
+}

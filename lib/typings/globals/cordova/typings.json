@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/844831b968857a9dc2f44e0698ff282863c5c238/cordova/cordova.d.ts",
+    "raw": "registry:dt/cordova#0.0.0+20160510234918",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/844831b968857a9dc2f44e0698ff282863c5c238/cordova/cordova.d.ts"
+  }
+}
