@@ -47,8 +47,8 @@
     "ng-cordova": "^0.1.23-alpha"
   },
   "cordovaPlugins": [
-    "org.apache.cordova.battery-status",
-    "org.apache.cordova.camera",
+    "cordova-plugin-battery-status",
+    "cordova-plugin-camera",
     "cordova-plugin-network-information",
     "cordova-plugin-spinner-dialog"
   ],
