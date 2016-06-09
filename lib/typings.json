@@ -1,0 +1,19 @@
+{
+	"name": "ionic-cross-platform-boilerplate",
+	"version": false,
+	"globalDependencies": {
+		"angular": "registry:dt/angular#1.5.0+20160602160139",
+		"angular-ui-router": "registry:dt/angular-ui-router#1.1.5+20160521151413",
+		"cordova": "registry:dt/cordova#0.0.0+20160510234918",
+		"cordova-plugin-spinner": "registry:dt/cordova-plugin-spinner#1.0.0+20160317120654",
+		"cordova/plugins/batterystatus": "registry:dt/cordova/plugins/batterystatus#0.0.0+20160316155526",
+		"cordova/plugins/camera": "registry:dt/cordova/plugins/camera#0.0.0+20160316155526",
+		"cordova/plugins/networkinformation": "registry:dt/cordova/plugins/networkinformation#0.0.0+20160514150524",
+		"ionic": "registry:dt/ionic#0.0.0+20160501155303",
+		"jquery": "registry:dt/jquery#1.10.0+20160417213236",
+		"ng-cordova/camera": "registry:dt/ng-cordova/camera#0.0.0+20160316171810",
+		"ng-cordova/network": "registry:dt/ng-cordova/network#0.0.0+20160316171810",
+		"ng-cordova/tsd": "registry:dt/ng-cordova/tsd#0.0.0+20151202000610",
+		"require": "registry:dt/require#2.1.20+20160316155526"
+	}
+}
