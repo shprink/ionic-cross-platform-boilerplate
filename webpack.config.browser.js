@@ -8,4 +8,6 @@ webpackConfig.plugins.push(new webpack.DefinePlugin({
     IS_DESKTOP: false
 }));
 
+webpackConfig.devtool = 'source-map';
+
 module.exports = webpackConfig;

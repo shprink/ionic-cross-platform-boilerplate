@@ -60,6 +60,7 @@ module.exports = {
             filename: 'index.html',
             pkg: pkg,
             template: path.join(libPath, 'index.html')
-        })
+        }),
+        new webpack.optimize.UglifyJsPlugin()
     ]
 };

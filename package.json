@@ -9,6 +9,7 @@
     "dumpprod": "rm -rf www/* && webpack --release --config webpack.config.prod.js",
     "watch": "rm -rf www/* && webpack --watch --progress --colors --config webpack.config.browser.js",
     "browser": "npm run dumpdev -- --config webpack.config.browser.js && cordova run browser",
+    "browser-watch": "rm -rf www/* && webpack-dev-server --progress --colors --inline --hot --port 8000 --config webpack.config.browser.js",
     "desktop": "npm run dumpdev -- --config webpack.config.desktop.js  && cordova build browser && electron ./platforms/browser/www/index.desktop.js",
     "android": "npm run dumpdev -- --config webpack.config.android.js  && cordova run android",
     "iosEmulator": "npm run dumpdev -- --config webpack.config.ios.js  && cordova run ios",
@@ -39,6 +40,7 @@
     "style-loader": "^0.13.0",
     "ts-loader": "^0.7.2",
     "typescript": "^1.7.3",
+    "uglify-js": "^2.6.2",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
